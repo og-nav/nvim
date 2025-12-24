@@ -1,0 +1,31 @@
+# Lazy.nvim plugin directory
+# NOTE: lazy-lock.json is tracked to ensure consistent plugin versions
+
+# Mason LSP installations
+**/mason/
+
+# Neovim state files
+*.log
+*.tmp
+
+# Plugin data
+plugin/
+
+# Session files
+**/*.vim
+**/*.shada
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*~
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+temp/
+
