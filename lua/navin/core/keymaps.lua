@@ -37,6 +37,10 @@ keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll up and center" })
 keymap.set("n", "n", "nzzzv", { desc = "Next search result (centered)" })
 keymap.set("n", "N", "Nzzzv", { desc = "Previous search result (centered)" })
 
+-- Keep cursor centered when jumping to top/bottom
+keymap.set("n", "gg", "ggzz", { desc = "Go to top and center" })
+keymap.set("n", "G", "Gzz", { desc = "Go to bottom and center" })
+
 -- Better paste (don't lose clipboard when pasting over text)
 keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without losing clipboard" })
 

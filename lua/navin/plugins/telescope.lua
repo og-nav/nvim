@@ -44,6 +44,7 @@ return {
 
     keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
     keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
+    keymap.set("n", "<leader>fh", "<cmd>Telescope find_files hidden=true<cr>", { desc = "Fuzzy find files (including hidden)" })
     
     -- Only enable ripgrep-dependent features if ripgrep is installed
     if utils.has_ripgrep() then
